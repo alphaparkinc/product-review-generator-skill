@@ -1,0 +1,55 @@
+{
+  "name": "product-review-generator-skill",
+  "version": "1.0.0",
+  "description": "Generate authentic, diverse product reviews for e-commerce listings. Supports multiple tones, star ratings, verified buyer simulation, and structured review templates.",
+  "author": "alphaparkinc",
+  "category": "content-generation",
+  "tags": [
+    "reviews",
+    "e-commerce",
+    "content",
+    "nlg",
+    "product"
+  ],
+  "inputs": {
+    "product_name": {
+      "type": "string",
+      "description": "Name of the product to review."
+    },
+    "product_features": {
+      "type": "array",
+      "description": "Key features of the product."
+    },
+    "rating": {
+      "type": "integer",
+      "description": "Star rating (1-5)."
+    },
+    "tone": {
+      "type": "string",
+      "enum": [
+        "enthusiastic",
+        "balanced",
+        "critical",
+        "analytical"
+      ],
+      "description": "Review tone."
+    },
+    "num_reviews": {
+      "type": "integer",
+      "description": "Number of review variants to generate.",
+      "default": 3
+    }
+  },
+  "outputs": {
+    "reviews": {
+      "type": "array",
+      "description": "Generated review objects with title, body, rating, and reviewer persona."
+    },
+    "avg_word_count": {
+      "type": "number",
+      "description": "Average word count across reviews."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
