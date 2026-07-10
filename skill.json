@@ -1,5 +1,5 @@
 {
-  "name": "product-review-generator-skill",
+  "name": "genpark-product-review-generator-skill",
   "version": "1.0.0",
   "description": "GenPark AI Agent Skill - Generate authentic, diverse product reviews for e-commerce listings. Supports multiple tones, star ratings, verified buyer simulation, and structured review templates.",
   "author": "genpark",
