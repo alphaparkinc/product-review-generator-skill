@@ -1,4 +1,4 @@
-# product-review-generator-skill
+# genpark-product-review-generator-skill
 
 > **GenPark AI Agent Skill** — Generate authentic, diverse product reviews for e-commerce listings.
 
